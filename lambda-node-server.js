@@ -31,7 +31,7 @@ const CONTENT_DIR = "content";
 const IMAGES_DIR = "images";
 const TEMPLATE_FILE = "template.html";
 const MAX_URL_LENGTH = 128;
-const CONTENT_BUCKET = "sharpcrafts.com"
+const CONTENT_BUCKET = "yours3bucker"
 
 function getContentTree(dir, done) {
     var tree = {};
