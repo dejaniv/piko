@@ -1,0 +1,7 @@
+{headline}
+Another Example Article
+{/headline}
+
+{p}
+Please have a look at {link:/Example_Topic/Example_Article}Example Article{/link}.
+{/p}

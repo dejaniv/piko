@@ -1,0 +1,27 @@
+{headline}
+Example Article
+{/headline}
+
+{p}
+May 5, 2017
+{p}
+
+{p}
+This is example article. Here's some bullet points:
+{en}First bullet point
+{*}Second bullet point
+{/en}
+{/p}
+
+{p}
+This is another paragraph {b}with some text in bold{/b}. Follow this link to go {link:/}home{/link}. Follow {link:#someanchor}this link{/link} to get to the section "New Headline" in this document.
+{/p}
+
+{headline:someanchor}New Headline{/headline}
+{p}
+You can insert images in articles and add captions.
+{image:images/piko.png}
+{figure:Image 1: Something about this image}
+{p}
+Click on the image to display its full-size version.
+{/p}

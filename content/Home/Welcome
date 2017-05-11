@@ -1,0 +1,38 @@
+{headline}
+About
+{/headline}
+
+{p}
+Piko is a very simple template engine.
+{/p}
+{headline}Features{/headline}
+{p}
+{en}No client side javascript
+{*}Articles are simple text files
+{*}Directory structure determines site navigation
+{*}Piko is small screen friendly
+{*}Template HTML and CSS files can be easily customized to fit your needs
+{*}AWS Lambda version is included in distribution so you can run Piko {b}serverlessly{/b} in AWS
+{/en} 
+{/p}
+{p}
+{headline}Usage{/headline}
+To run Piko follow these steps:
+{en} Clone git repository:
+{code}git clone https://github.com/dejaniv/piko{/code}
+{*} Run pico:
+{code}$> cd piko
+$> node node-server.js
+{/code}
+{*} Open web browser and go to: {link:http://127.0.0.1:1337}http://127.0.0.1:1337{/link}
+{/en}
+{/p} 
+ 
+{p}
+Take a look at the {link:/Example_Topic/Example_Article}example article{/link}. 
+{/p}
+{p}
+You can find details about Piko {link:https://sharpcrafts.com}on author's website{/link}.
+{/p}
+
+

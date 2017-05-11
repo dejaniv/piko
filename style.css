@@ -1,0 +1,298 @@
+/*
+ This file is part of Piko Template Engine.
+
+    Piko Template Engine is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Piko Template Engine is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Piko Template Engine.  If not, see <http://www.gnu.org/licenses/>.
+
+    Author: Dejan Ivkovic
+*/
+
+body {
+background: #e0dedf;
+color: #333;
+font-family: "Theinhardt-Regular", sans-serif;
+position: relative;
+}
+
+div {
+display:block;
+}
+
+#all {
+margin: 0 auto;
+width: 900px;
+padding: 0px;
+text-align: left;
+background: #ededed;
+overflow: hidden;
+}
+
+@media only screen and (max-device-width: 900px) {
+#all {
+	width: 100%;
+	margin: 0px;
+}
+}
+
+#header {
+margin: 0px;
+padding: 20px 0 20px 10px;
+background: #afafaf;
+}
+
+@media only screen and (max-device-width: 900px) {
+#header {
+	padding: 5px 0px 5px 10px;
+	overflow: hidden;
+}
+}
+
+div#header h1 {
+font-size: 40px;
+font-family: courier, sans-serif;
+margin: 0px;
+}
+
+@media only screen and (max-device-width: 900px) {
+div#header h1 {
+font-size: 30px;
+}
+}
+
+div#header p {
+margin: 0px;
+font-size: 12px;
+}
+
+#mobilemenu {
+	display:none;
+}
+
+@media only screen and (max-device-width: 900px) {
+#header {
+	padding-top: 5px;
+	overflow: hidden;
+}
+#mobilemenu {
+	font-size: 20px;
+	font-weight:bolder;
+	display:block;
+	float:left;
+	margin:0px;
+	padding: 15px 10px 20px 10px;
+	background: #afafaf;
+	height:25px;
+	transition: background 0.5s;	
+}
+#logo {
+	display:block;
+	float:left;
+	padding-left:0px;
+	height:50px;
+	
+}
+#mobilemenu:focus{
+	outline: none;
+	background: #e0dedf;
+}
+#mobilemenu:focus ~ #navigation {
+	visibility: visible;
+	opacity: 1;
+}
+}
+
+#content {
+min-height:600px;
+width:100%;
+margin-top: 10px;
+overflow: auto; 
+display:inline;
+}
+
+.figure {
+font-style: italic;
+margin: 0px 0px 15px 0px;
+padding:0px;
+text-align: center;
+}
+
+.content {
+font-size: 14px;
+overflow: hidden; 
+}
+
+h1.content {
+font-size: 20px;
+text-align: left;
+}
+
+div.imgcontainer img {
+height:auto;
+width:100%;
+border:1px solid black;
+max-width:610px;
+}
+
+.imgcontainer {
+width:90%;
+margin: 10px 5% 10px 5%;
+padding:0px;
+}
+
+div.codecontainer {
+overflow: auto;
+margin: 10px;
+border: 1px dashed black;
+background: #ffffff;
+}
+
+code.content {
+display: inline-block;
+float:left;
+white-space: pre;
+font-size: 12px;
+font-family: courier;
+text-align:left;
+padding: 5px 5px 10px 5px;
+}
+
+#main {
+float: left;
+width: 69%;
+min-height: 600px;
+text-align: left;
+padding-left: 10px;
+}
+
+@media only screen and (max-device-width: 900px) {
+#main {
+	width: 95%;
+}
+}
+
+ul.content {
+text-align:left;
+}
+
+#navigation {
+float: right;
+display: inline;
+margin: 10px 10px 0 0px;
+border-left: 1px dashed black;
+min-width:25%;
+}
+
+@media only screen and (max-device-width: 900px) {
+#navigation {
+float: left;
+position: absolute;
+border-left: none;
+display: block;
+visibility:hidden;
+background: #e0dedf;
+margin: 0px;
+transition: visibility 05s, opacity 0.5s;
+opacity: 0;
+width:100%;
+}
+}
+
+#footer {
+border-top: 1px solid black;
+font-size: 10px;
+text-align: right;
+width: 70%;
+margin: 5px;
+float:left;
+}
+
+@media only screen and (max-device-width: 900px) {
+#footer {
+width: 95%;
+}
+}
+
+.menu {
+font-size: 14px;
+font-weight: normal;
+margin: 0px;
+padding: 0px;
+}
+
+@media only screen and (max-device-width: 900px) {
+.menu {
+	font-size: 18px;
+}
+}
+
+
+div.menu {
+margin-bottom: 10px;
+padding-left: 10px;
+}
+
+@media only screen and (max-device-width: 900px) {
+div.menu {
+margin-bottom: 10px;
+padding-left: 0px;
+}
+}
+
+p.menu#home:hover {
+background:#bbbbbb;
+}
+
+p.menu#homeSelected {
+background:#cccccc;
+}
+
+p.menu {
+border-bottom: 1px solid black;
+font-weight: bold;
+}
+
+li.menu p {
+margin:0px;
+padding:2px 0px 0px 0px;
+}
+
+li.menu {
+padding-left:10px;
+}
+
+li.menu:hover {
+background:#bbbbbb;
+}
+
+li.menu#selected {
+background:#cccccc;
+}
+
+li.menu#selected:hover {
+background:#cccccc;
+}
+
+ul.menu {
+margin-left: 0px;
+list-style-type: none;
+}
+
+a.menu {
+color: black;
+text-decoration: none;
+width: 100%;
+}
+
+a.menu:hover {
+text-decoration: none;
+}
